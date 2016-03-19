@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    tools:context="techcrunch.com.fitmate.PickMealActivity">
+
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:id="@+id/pick_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PICK YOUR MEAL PLAN"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#858585"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_below="@id/pick_text"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/carb_free"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="?attr/selectableItemBackground">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/carb_logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/carb_free" />
+
+                <TextView
+                    android:id="@+id/carb_text"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/carb_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:text="Carb Free"/>
+
+                <TextView
+                    android:layout_below="@id/carb_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Carb-Free-Diets restrict carbohydrate consumption."/>
+
+            </RelativeLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/gluten_free"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/gluten_logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/gluten_free" />
+
+                <TextView
+                    android:id="@+id/gluten_text"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/gluten_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:text="Gluten Free"/>
+
+                <TextView
+                    android:layout_below="@id/gluten_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="A Gluten-Free-Diet excludes gluten, found in wheat, barley, rye."/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/veg"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/veg_logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/vegetarian" />
+
+                <TextView
+                    android:id="@+id/veg_text"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/veg_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:text="Vegetarian"/>
+
+                <TextView
+                    android:layout_below="@id/veg_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="A Vegetarian diet excludes the consumption of meat, poultry and seafood."/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
